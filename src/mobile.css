@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.section {
+  height: 100vh;
+}
+.section-content {
+  font-size: 4vh;
+}
+
+#home {
+  background-image: url("./Assets/bg1.png");
+  background-size: auto 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 50px;
+}
+
+#about {
+  background-image: url("./Assets/bg2.png");
+  background-size: auto 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#courses {
+  background-image: url("./Assets/bg3.png");
+  background-size: auto 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#social {
+  background-image: url("./Assets/bg4.png");
+  background-size: auto 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.blogExcerpt {
+  background: #f5f5f5;
+  text-align: left;
+  margin-right: 800px;
+  margin-left: 125px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+#nav1 {
+  opacity: 0.85;
+}
+
+.list-unstyled {
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+.list-icon {
+  display: inline-block;
+  max-height: "50px";
+  max-width: "50px";
+}
+
+.list-header {
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3.5vh;
+}
+
+.links {
+  color: black;
+  font-family: "Teko", sans-serif;
+  font-size: 2.25vh;
+}
+
+.links:hover {
+  color: black;
+  font-family: "Teko", sans-serif;
+}
+
+.leftpoint {
+  margin-left: 10px;
+}
+
+#about-header {
+  margin-left: 20px;
+  font-family: "Teko", sans-serif;
+  font-size: 5vh;
+}
+
+#about-body {
+  margin-left: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.25vh;
+}
+
+.courses-footer {
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding-top: 8vh;
+}
+#inProgressHeader {
+  font-size: 3vh;
+}
+
+/*BLOGS*/
+.youtube-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 21%;
+}
+.main-youtube {
+  /*
+    position: absolute; /* positions out of the flow, but according to the nearest parent 
+    right: 300px; /* confuse it i guess
+  
+    left: 0px;
+    margin: auto; /* make em equal 
+    display: inline-flex;
+    */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38%;
+  height: 90%;
+}
+
+@media only screen and (max-width: 375px) {
+  .second-youtube {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  .second-youtube {
+    /*
+      position: absolute;  positions out of the flow, but according to the nearest parent 
+      right: 300px; /* confuse it i guess 
+      top: 1;
+      left: 0px;
+      bottom: 60px;
+      margin-bottom: 5px;
+      margin: auto; /* make em equal 
+      display: inline-flex;
+      */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38%;
+    height: 90%;
+  }
+}

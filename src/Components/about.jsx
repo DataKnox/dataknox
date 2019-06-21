@@ -5,9 +5,8 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <br />
         <h3 id="about-header">Welcome to my page</h3>
-        <br />
+
         <div id="about-body">
           <p>I didn't always want to be in I.T. That wasn't the dream.</p>
           <p>
@@ -49,12 +48,22 @@ class About extends Component {
             And cloud really shines in Platform as a Service (PaaS) offerings,
             so I learned C#, ASP.NET, ReactJS, and NoSQL.
           </p>
-          <p>(This site is ReactJS + NodeJS)</p>
+          <p>
+            (This site is ReactJS + NodeJS: &nbsp;&nbsp;
+            <a
+              href="https://github.com/khutch66/dataknox"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+            )
+          </p>
           <p>
             CBT Nuggets carried me every step of the way through this journey. I
             am so lucky that they let me help others now.
           </p>
-          <p>Hit me up on Social anytime and check my courses below</p>
+          <p>Hit me up on Social anytime and check my courses below.</p>
         </div>
       </React.Fragment>
     );

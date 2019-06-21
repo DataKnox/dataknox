@@ -11,8 +11,14 @@ class Courses extends Component {
     return (
       <React.Fragment>
         <ul class="list-unstyled">
-          <li>
-            <img src={reading} height="100" width="100" alt="reading" />
+          <li id="inProgressHeader">
+            <img
+              src={reading}
+              height="90"
+              width="7%"
+              max-width="1vw"
+              alt="reading"
+            />
             <i>In Progress</i>: CompTIA A+ 220-1002, Software Troubleshooting
           </li>
 
@@ -81,10 +87,11 @@ class Courses extends Component {
 
           <img
             src={db}
-            height="50"
-            width="50"
+            height="50px"
+            width="50px"
             alt="reading"
             className="list-icon"
+            mode="fit"
           />
 
           <li className="list-header">SQL</li>

@@ -7,8 +7,6 @@ class Blogs extends Component {
   state = {};
   render() {
     const opts = {
-      height: "340",
-      width: "600",
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
         autoplay: 1
@@ -16,30 +14,42 @@ class Blogs extends Component {
     };
     return (
       <React.Fragment>
-        <Spring from={{ marginTop: -1000 }} to={{ marginTop: 0 }} delay="1500">
-          {props => (
-            <div style={props}>
-              <YouTube
-                videoId="F9j2aiqK0tw"
-                opts={opts}
-                onReady={this._onReady}
-                className="main-youtube"
-              />
-            </div>
-          )}
-        </Spring>
-        <Spring from={{ marginTop: -1000 }} to={{ marginTop: 0 }} delay="1500">
-          {props => (
-            <div style={props}>
-              <YouTube
-                videoId="bbkBJxOo4gg"
-                opts={opts}
-                onReady={this._onLoad}
-                className="second-youtube"
-              />
-            </div>
-          )}
-        </Spring>
+        <div className="youtube-container">
+          <Spring
+            from={{ marginTop: -1000 }}
+            to={{ marginTop: 0 }}
+            delay="1500"
+          >
+            {props => (
+              <div style={props}>
+                <YouTube
+                  videoId="F9j2aiqK0tw"
+                  opts={opts}
+                  onReady={this._onReady}
+                  className="main-youtube"
+                />
+              </div>
+            )}
+          </Spring>
+        </div>
+        <div className="youtube-container">
+          <Spring
+            from={{ marginTop: -1000 }}
+            to={{ marginTop: 0 }}
+            delay="1500"
+          >
+            {props => (
+              <div style={props}>
+                <YouTube
+                  videoId="bbkBJxOo4gg"
+                  opts={opts}
+                  onReady={this._onLoad}
+                  className="second-youtube"
+                />
+              </div>
+            )}
+          </Spring>
+        </div>
       </React.Fragment>
     );
   }

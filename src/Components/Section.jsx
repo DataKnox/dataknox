@@ -13,7 +13,11 @@ class Section extends Component {
       <div className={"section" + (dark ? " section-dark" : "")}>
         <div className="section-content" id={id} style={{ marginLeft: 20 }}>
           <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay="500">
-            {props => <h1 style={props}>{title}</h1>}
+            {props => (
+              <p style={props} className="section-content">
+                {title}
+              </p>
+            )}
           </Spring>
           <div className="optional-render">
             {blogs && <Blogs />}

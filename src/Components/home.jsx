@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Section
-          title="Welcome"
+          title="Welcome (its Network Chuck for now. He's pretty great though)"
           subtitle={section1text}
           dark={true}
           id="home"
@@ -23,7 +23,6 @@ class Home extends Component {
           dark={false}
           id="about"
           className="section"
-          blogs={false}
           about={true}
         />
         <Section
@@ -32,7 +31,6 @@ class Home extends Component {
           dark={false}
           id="courses"
           className="section"
-          blogs={false}
           courses={true}
         />
         <Section
@@ -41,7 +39,6 @@ class Home extends Component {
           dark={false}
           id="social"
           className="section"
-          blogs={false}
           contacts={true}
         />
       </React.Fragment>
