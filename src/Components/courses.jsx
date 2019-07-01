@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import reading from "../Assets/reading.png";
 import azure from "../Assets/azure.png";
 import db from "../Assets/db.jpg";
 import dashboard from "../Assets/dashboard.png";
@@ -11,25 +10,26 @@ class Courses extends Component {
     return (
       <React.Fragment>
         <ul class="list-unstyled">
+          {/*
           <li id="inProgressHeader">
             <img
               src={reading}
               height="90"
-              width="7%"
+              width="5%"
               max-width="1vw"
               alt="reading"
             />
             <i>In Progress</i>: CompTIA A+ 220-1002, Software Troubleshooting
           </li>
-
+    */}
           <img
             src={azure}
             height="50"
-            width="50"
+            width="3%"
+            max-width="1vw"
             alt="reading"
             className="list-icon"
           />
-
           <li className="list-header">Azure</li>
           <ul>
             <li>
@@ -88,12 +88,12 @@ class Courses extends Component {
           <img
             src={db}
             height="50px"
-            width="50px"
+            width="3%"
+            max-width="1vw"
             alt="reading"
             className="list-icon"
             mode="fit"
           />
-
           <li className="list-header">SQL</li>
           <ul>
             <li>
@@ -134,7 +134,8 @@ class Courses extends Component {
           <img
             src={dashboard}
             height="50"
-            width="50"
+            width="3%"
+            max-width="1vw"
             alt="reading"
             className="list-icon"
           />
@@ -165,6 +166,26 @@ class Courses extends Component {
                 rel="noopener noreferrer"
               >
                 Tableau Essentials
+              </a>
+              <img
+                src={leftpoint}
+                height="20"
+                width="20"
+                alt="reading"
+                className="leftpoint"
+              />
+            </li>
+          </ul>
+          <li className="list-header">CompTIA</li>
+          <ul>
+            <li>
+              <a
+                href="https://www.cbtnuggets.com/learn/it-training/troubleshoot-operating-systems/"
+                target="_blank"
+                className="links"
+                rel="noopener noreferrer"
+              >
+                CompTIA A+ 220-1002 (Software Troubleshooting)
               </a>
               <img
                 src={leftpoint}

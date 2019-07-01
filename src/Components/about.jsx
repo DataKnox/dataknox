@@ -51,7 +51,7 @@ class About extends Component {
           <p>
             (This site is ReactJS + NodeJS: &nbsp;&nbsp;
             <a
-              href="https://github.com/khutch66/dataknox"
+              href="https://github.com/DataKnox/dataknox"
               target="_blank"
               rel="noopener noreferrer"
             >

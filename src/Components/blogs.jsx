@@ -23,7 +23,7 @@ class Blogs extends Component {
             {props => (
               <div style={props}>
                 <YouTube
-                  videoId="F9j2aiqK0tw"
+                  videoId="ZP3VUcrZ15c"
                   opts={opts}
                   onReady={this._onReady}
                   className="main-youtube"
@@ -59,7 +59,7 @@ class Blogs extends Component {
   }
 
   _onLoad(event) {
-    event.target.pauseVideo();
+    event.target.stopVideo();
   }
 }
 

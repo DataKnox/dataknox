@@ -4,10 +4,22 @@ import About from "./about";
 import Courses from "./courses";
 import Blogs from "./blogs";
 import Contacts from "./contacts";
+import Privacy from "./privacy";
+import Blog from "./blog";
 
 class Section extends Component {
   render() {
-    const { title, dark, id, blogs, courses, about, contacts } = this.props;
+    const {
+      title,
+      dark,
+      id,
+      blogs,
+      courses,
+      about,
+      contacts,
+      privacy,
+      blog
+    } = this.props;
 
     return (
       <div className={"section" + (dark ? " section-dark" : "")}>
@@ -24,6 +36,8 @@ class Section extends Component {
             {about && <About />}
             {courses && <Courses />}
             {contacts && <Contacts />}
+            {privacy && <Privacy />}
+            {blog && <Blog />}
           </div>
         </div>
       </div>

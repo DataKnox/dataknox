@@ -1,4 +1,4 @@
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 415px) {
   .App {
     text-align: center;
   }
@@ -73,6 +73,27 @@
     height: 100%;
   }
 
+  #blog {
+    background-image: url("./Assets/bg5.jpg");
+    background-size: auto 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .blogcontainer {
+    height: 100vh;
+  }
+
+  .blogpost {
+    padding: 50px;
+    font-size: 2vh;
+    background-image: url("./Assets/bg5.jpg");
+    background-size: auto 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
   .blogExcerpt {
     background: #f5f5f5;
     text-align: left;
@@ -117,6 +138,12 @@
     font-family: "Teko", sans-serif;
   }
 
+  .bloglinks {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 3.5vh;
+  }
+
   .leftpoint {
     margin-left: 10px;
   }
@@ -131,6 +158,10 @@
     margin-left: 20px;
     font-family: "Ubuntu", sans-serif;
     font-size: 2.25vh;
+  }
+
+  .privacy-body {
+    font-size: 2vh;
   }
 
   .courses-footer {
@@ -185,7 +216,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
   .main-youtube {
     /*
   position: absolute; /* positions out of the flow, but according to the nearest parent 
@@ -249,5 +280,26 @@
     margin-left: 20px;
     font-family: "Ubuntu", sans-serif;
     font-size: 1.6vmax;
+  }
+  .list-header {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3.5vh;
+  }
+
+  .links {
+    color: black;
+    font-family: "Teko", sans-serif;
+    font-size: 2.25vh;
+  }
+
+  .links:hover {
+    color: black;
+    font-family: "Teko", sans-serif;
+  }
+  #inProgressHeader {
+    font-size: 1.25vmax;
   }
 }

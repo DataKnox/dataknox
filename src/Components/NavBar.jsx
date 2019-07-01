@@ -19,7 +19,10 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg bg-light fixed-top transparent" id="nav1">
+      <nav
+        className="navbar navbar-expand-lg bg-light fixed-top transparent"
+        id="nav1"
+      >
         <Link
           activeClass="active"
           to="home"
@@ -64,6 +67,28 @@ export default class NavBar extends Component {
           className="nav-link"
         >
           Social
+        </Link>
+        <Link
+          activeClass=""
+          to="blog"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="nav-link"
+        >
+          Blog
+        </Link>
+        <Link
+          activeClass=""
+          to="privacy"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="nav-link"
+        >
+          Privacy
         </Link>
       </nav>
     );
